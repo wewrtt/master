@@ -1,0 +1,29 @@
+kiếm tra trạng thái
+    GET /_cat/health?v
+kiếm tra index 
+    GET /_cat/indices?v
+
+// tham số pretty để show ra kết quả trả về
+tạo index 
+    PUT /student?pretty
+xóa index 
+    DELETE /student?pretty
+
+thêm document vào index 
+PUT /student/_doc/1 
+{
+  "name":"long",
+  "age": 24
+}
+
+lấy dữ liệu document 
+GET /student/_doc/1?pretty
+
+tương tự với DELETE
+
+create và update hàng loạt  document
+POST /_bulk
+{"index":{"_index":"student","_id":1}}
+{"name":"long"}
+{"index":{"_index":"student","_id":2}}
+{"name":"long 2"}
