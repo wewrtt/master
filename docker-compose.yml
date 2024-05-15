@@ -33,4 +33,5 @@ volumes:
       type: none
 
 ## nếu es ko chạy đc bị tự động chết và có log bootstrap checks failed
-## dùng wsl chạy lệnh  wsl -d docker-desktop ->  sysctl -w vm.max_map_count=26214
+## dùng wsl chạy lệnh  wsl -d docker-desktop 
+## sysctl -w vm.max_map_count=26214
